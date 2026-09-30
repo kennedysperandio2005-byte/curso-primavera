@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domine o Oracle Primavera P6 | O Padrão da Indústria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            650: '#1d4ed8',
+                            700: '#1e3a8a',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            accent: '#f97316' // Laranja vibrante para engenharia/destaque
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-brand-accent text-white p-2.5 rounded-lg shadow-lg shadow-brand-accent/20">
+                    <i class="fa-solid fa-chart-gantt text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block">Primavera<span class="text-brand-accent">Master</span></span>
+                    <span class="text-xs text-slate-400 block tracking-widest uppercase">Planejamento & Controle</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#beneficios" class="hover:text-brand-accent transition">Vantagens</a>
+                <a href="#conteudo" class="hover:text-brand-accent transition">Conteúdo</a>
+                <a href="#publico" class="hover:text-brand-accent transition">Para Quem é</a>
+                <a href="#investimento" class="hover:text-brand-accent transition">Investimento</a>
+            </nav>
+            <div>
+                <a href="#inscricao" class="bg-brand-accent hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-md shadow-brand-accent/30 transition transform hover:-translate-y-0.5">
+                    Garantir Vaga
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-accent/10 border border-brand-accent/20 px-3.5 py-1.5 rounded-full text-brand-accent text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>A ferramenta exigida pelas maiores mineradoras e construtoras</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Domine o <span class="text-brand-accent">Oracle Primavera P6</span> e Lidere Grandes Projetos
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                        Aprenda do zero ao avançado a planejar, gerenciar cronogramas complexos, alocar recursos e controlar custos utilizando o software padrão de mercado usado por gigantes como a Vale e grandes corporações globais.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#inscricao" class="w-full sm:w-auto bg-brand-accent hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-accent/30 text-center transition flex items-center justify-center space-x-3 text-base">
+                            <span>Quero me Inscrever Agora</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#conteudo" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold px-6 py-4 rounded-xl text-center transition">
+                            Ver Conteúdo Programático
+                        </a>
+                    </div>
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800/80 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl font-bold text-white">+1.200</p>
+                            <p class="text-xs text-slate-400">Alunos Capacitados</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400">Prático & Aplicado</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Certificado</p>
+                            <p class="text-xs text-slate-400">Profissional Incluso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic / Simulated Dashboard Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
+                            Alta Demanda
+                        </div>
+                        <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-slate-800">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            <span class="text-xs text-slate-400 font-mono">primavera_p6_projeto_industrial.xer</span>
+                        </div>
+                        <div class="space-y-4 text-sm font-mono">
+                            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800/80 flex items-center justify-between">
+                                <span class="text-slate-300"><i class="fa-solid fa-bars-progress text-brand-accent mr-2"></i> WBS: Terraplanagem & Obras</span>
+                                <span class="text-green-400 font-bold">100% Concluído</span>
+                            </div>
+                            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800/80 flex items-center justify-between">
+                                <span class="text-slate-300"><i class="fa-solid fa-road text-brand-accent mr-2"></i> Caminho Crítico: Ferrovia</span>
+                                <span class="text-amber-400 font-bold">Em Andamento</span>
+                            </div>
+                            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800/80 flex items-center justify-between">
+                                <span class="text-slate-300"><i class="fa-solid fa-users-gear text-brand-accent mr-2"></i> Nivelamento de Recursos</span>
+                                <span class="text-blue-400 font-bold">Otimizado</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                            <span>Status do Cronograma: No Prazo</span>
+                            <span class="text-brand-accent font-bold">CPM Ativo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Por que o Oracle Primavera P6 é indispensável?</h2>
+                <p class="mt-4 text-slate-400 text-base">Grandes projetos de engenharia, mineração e infraestrutura não toleram falhas de planejamento.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl hover:border-brand-accent/50 transition">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Método do Caminho Crítico</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Aprenda a mapear dependências lógicas complexas e identifique exatamente quais atividades atrasam o projeto final.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl hover:border-brand-accent/50 transition">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Gestão de Recursos & Custos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Controle frotas pesadas, equipes de campo, alocação de maquinário e acompanhe orçamentos de forma milimétrica.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl hover:border-brand-accent/50 transition">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Empregabilidade em Alta</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Profissionais especializados em Primavera P6 estão entre os mais bem pagos e disputados pelo setor industrial e corporativo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Programático -->
+    <section id="conteudo" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Conteúdo Programático Completo</h2>
+                <p class="mt-4 text-slate-400 text-base">Um roteiro estruturado para transformar você de iniciante a planejador sênior.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl flex items-start space-x-4">
+                    <span class="bg-brand-accent/20 text-brand-accent font-bold px-3 py-1 rounded-lg text-sm">01</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Introdução e Interface</h3>
+                        <p class="text-sm text-slate-400 mt-1">Configuração de Enterprise Project Structure (EPS) e Organização de Unidades (OBS).</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl flex items-start space-x-4">
+                    <span class="bg-brand-accent/20 text-brand-accent font-bold px-3 py-1 rounded-lg text-sm">02</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">WBS e Estruturação</h3>
+                        <p class="text-sm text-slate-400 mt-1">Criação da Estrutura Analítica de Projeto e definição de calendários produtivos.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl flex items-start space-x-4">
+                    <span class="bg-brand-accent/20 text-brand-accent font-bold px-3 py-1 rounded-lg text-sm">03</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Atividades e Vínculos Lógicos</h3>
+                        <p class="text-sm text-slate-400 mt-1">Tipos de dependências (FS, FF, SS, SF), atrasos (lags) e cálculo do caminho crítico.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl flex items-start space-x-4">
+                    <span class="bg-brand-accent/20 text-brand-accent font-bold px-3 py-1 rounded-lg text-sm">04</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Recursos e Custos</h3>
+                        <p class="text-sm text-slate-400 mt-1">Alocação de mão de obra, equipamentos e nivelamento de recursos excedentes.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl flex items-start space-x-4">
+                    <span class="bg-brand-accent/20 text-brand-accent font-bold px-3 py-1 rounded-lg text-sm">05</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Linha de Base & Atualização</h3>
+                        <p class="text-sm text-slate-400 mt-1">Salvamento de Baseline, registro de avanço físico e análise de desvios de prazo.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-xl flex items-start space-x-4">
+                    <span class="bg-brand-accent/20 text-brand-accent font-bold px-3 py-1 rounded-lg text-sm">06</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Relatórios e Estudo de Caso</h3>
+                        <p class="text-sm text-slate-400 mt-1">Geração de relatórios executivos e simulação prática inspirada em grandes obras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quem É -->
+    <section id="publico" class="py-20 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Para quem é este treinamento?</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fa-solid fa-hard-hat"></i></div>
+                    <h3 class="font-bold text-white mb-2">Engenheiros</h3>
+                    <p class="text-sm text-slate-400">Civil, Produção, Mecânica, Minas e Elétrica que buscam liderança em projetos.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3 class="font-bold text-white mb-2">Planejadores</h3>
+                    <p class="text-sm text-slate-400">Profissionais de PMO e controladores de projetos focados em aprimorar técnicas.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3 class="font-bold text-white mb-2">Estudantes</h3>
+                    <p class="text-sm text-slate-400">Estudantes universitários que querem se diferenciar no mercado corporativo.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fa-solid fa-industry"></i></div>
+                    <h3 class="font-bold text-white mb-2">Setor Industrial</h3>
+                    <p class="text-sm text-slate-400">Profissionais de mineração, óleo e gás, energia e infraestrutura pesada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição / CTA -->
+    <section id="inscricao" class="py-20 bg-gradient-to-t from-slate-900 to-slate-950">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-slate-800 p-8 sm:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 transform translate-x-8 -translate-y-8 w-48 h-48 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="text-center mb-8">
+                    <span class="text-brand-accent text-xs font-bold uppercase tracking-widest bg-brand-accent/10 px-3 py-1 rounded-full">Vagas abertas</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-3">Garanta Sua Vaga na Próxima Turma</h2>
+                    <p class="text-slate-400 text-sm mt-2">Preencha seus dados abaixo para receber as condições especiais de lançamento.</p>
+                </div>
+
+                <form id="formInscricao" class="space-y-4" onsubmit="event.preventDefault(); alert('Inscrição simulada com sucesso! Em breve entraremos em contato.');">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Nome Completo</label>
+                        <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-brand-accent transition" placeholder="Seu nome completo">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">E-mail Profissional</label>
+                        <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-brand-accent transition" placeholder="seu.email@exemplo.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">WhatsApp</label>
+                        <input type="tel" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-brand-accent transition" placeholder="(00) 90000-0000">
+                    </div>
+                    <button type="submit" class="w-full bg-brand-accent hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-brand-accent/30 transition text-base tracking-wide">
+                        Quero Dominar o Primavera P6
+                    </button>
+                    <p class="text-center text-xs text-slate-500 mt-4"><i class="fa-solid fa-lock mr-1"></i> Seus dados estão seguros. Sem spam.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+            <p>&copy; 2026 PrimaveraMaster. Todos os direitos reservados.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-slate-400 transition">Termos de Uso</a>
+                <a href="#" class="hover:text-slate-400 transition">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
